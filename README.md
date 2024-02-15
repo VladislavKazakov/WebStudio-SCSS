@@ -1,2 +1,1 @@
-# WebStudio-SCSS
-WebStudio-SCSS
+# webstudio

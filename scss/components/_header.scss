@@ -1,0 +1,108 @@
+.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.header__wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: $header-web;
+    margin-right: 93px;
+}
+
+.header__navigation{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header__black{
+    color: $nav-studio;
+}
+
+.header__site-nav{
+    width: 281px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__site-nav-link{
+    position: relative;
+    color: $nav;
+    transition-property: color;
+    transition-duration: 250ms;
+}
+
+.header__site-nav-link.current::after{
+    content: '';
+    display: block;
+    background-color: $header-web;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    left: 0;
+    bottom: -32px;
+}
+
+.header__contactc-item{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.header__email{
+    margin-right: 50px;
+    color: $nav-number;
+}
+
+.header__contactc-link{
+    color: $nav;
+    transition-property: color;
+    transition-duration: 250ms;
+}
+
+.header__contactc-link:hover.header__contact-icon{
+    fill: $header-web;
+}
+
+.header__contactc-link:hover{
+    animation-name: change;
+    animation-timing-function: $time;
+    animation-duration: 250ms;
+    animation-fill-mode: forwards;
+}
+@keyframes change{
+        0%{
+            color: $nav-number;
+        }
+        100%{
+            color: $header-web;
+        }
+}
+
+.header__contactc.header__contactc-link:hover{
+    animation-name: changefill;
+    animation-timing-function: $time;
+    animation-duration: 250ms;
+    animation-fill-mode: forwards;
+}
+@keyframes changefill{
+    0%{
+        color: $nav-number;
+    }
+    100%{
+        color: $header-web;
+    }
+}

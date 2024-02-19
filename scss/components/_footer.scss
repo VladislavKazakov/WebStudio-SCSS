@@ -1,0 +1,99 @@
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $footer-background;
+}
+
+.footer__wrapper{
+    display: flex;
+    margin: 0 auto;
+    align-items: baseline;
+}
+
+.footer__item{
+    margin: 9px;
+}
+
+.fuoter__logo{
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: $header-web;
+    margin-bottom: 20px;
+}
+
+.footer__white{
+    color: $main-title;
+}
+
+.footer__city{
+    color: $main-title;
+    font-size: 14px;
+}
+
+.footer__tel{
+    color: rgba(255, 255, 255, 0.60);
+    transition-property: color;
+    transition-duration: 250ms;
+}
+.footer__tel:hover{
+    color: $header-web;
+}
+
+.footer__social{
+    margin-top: 72px;
+    margin-left: 70px;
+    
+}
+
+.footer__join{
+    display: flex;
+    justify-content: left;
+    color: $button;
+    margin-bottom: 20px;
+}
+
+.footer__icon{
+    width: 20px;
+    height: 20px;
+    fill: $main-title;
+}
+
+.footer__link{
+    fill: $icon-color;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.10);
+    margin-right: 10px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+}
+
+.footer__link:hover,
+.footer__link:focus{
+    fill: $main-title;
+    background-color: $header-web;
+}
+
+.footer__subscribe{
+    margin-left: 93px;
+}
+
+.footer__newsletter{
+    color: $main-title;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+.footer__form-input-subscribe{
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(33, 150, 243, 0.00);
+    padding-left: 16px;
+}

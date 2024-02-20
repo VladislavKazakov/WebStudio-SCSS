@@ -79,9 +79,22 @@
     background-color: $header-web;
 }
 
-.footer__subscribe{
+.footer__sub{
     margin-left: 93px;
+
 }
+
+.footer__subscribe{
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background: $header-web;
+    color: $main-title;
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
+    cursor: pointer;
+}
+
 
 .footer__newsletter{
     color: $main-title;

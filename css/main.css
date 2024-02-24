@@ -82,6 +82,21 @@ a {
   bottom: -32px;
 }
 
+.header__site-nav-link:hover {
+  animation-name: changeColor;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-duration: 250ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes changeColor {
+  0% {
+    color: #757575;
+  }
+  100% {
+    color: #2196f3;
+  }
+}
 .header__contactc-item {
   font-weight: 500;
   font-size: 14px;
@@ -140,7 +155,7 @@ a {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
-  background: url(/img/lydi.webp), lightgray 0px -147.517px/100% 170.667% no-repeat;
+  background: url(../img/lydi.webp), lightgray 0px -147.517px/100% 170.667% no-repeat;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -186,22 +201,22 @@ a {
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  background-image: url(/img/antenna.webp);
+  background-image: url(../img/antenna.webp);
   background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .section__site-details-item:nth-child(2)::before {
-  background-image: url(/img/clock.webp);
+  background-image: url(../img/clock.webp);
 }
 
 .section__site-details-item:nth-child(3)::before {
-  background-image: url(/img/diagram.webp);
+  background-image: url(../img/diagram.webp);
 }
 
 .section__site-details-item:nth-child(4)::before {
-  background-image: url(/img/astronaut.webp);
+  background-image: url(../img/astronaut.webp);
 }
 
 .section__site-details {
@@ -587,6 +602,7 @@ a {
 }
 
 .footer__icon {
+  display: flex;
   width: 20px;
   height: 20px;
   fill: #ffffff;

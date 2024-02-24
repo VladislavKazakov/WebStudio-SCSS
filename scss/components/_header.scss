@@ -57,6 +57,21 @@
     bottom: -32px;
 }
 
+.header__site-nav-link:hover{
+    animation-name: changeColor;
+    animation-timing-function: $time;
+    animation-duration: 250ms;
+    animation-fill-mode: forwards;
+}
+@keyframes changeColor{
+    0%{
+        color: $nav-number;
+    }
+    100%{
+        color: $header-web;
+    }
+}
+
 .header__contactc-item{
     font-weight: 500;
     font-size: 14px;

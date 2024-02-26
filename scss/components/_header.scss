@@ -43,6 +43,21 @@
     color: $nav;
     transition-property: color;
     transition-duration: 250ms;
+
+    &:hover{
+        animation-name: changeColor;
+        animation-timing-function: $time;
+        animation-duration: 250ms;
+        animation-fill-mode: forwards;
+    }
+    @keyframes changeColor{
+        0%{
+            color: $nav-number;
+        }
+        100%{
+            color: $header-web;
+        }
+    }
 }
 
 .header__site-nav-link.current::after{
@@ -57,20 +72,7 @@
     bottom: -32px;
 }
 
-.header__site-nav-link:hover{
-    animation-name: changeColor;
-    animation-timing-function: $time;
-    animation-duration: 250ms;
-    animation-fill-mode: forwards;
-}
-@keyframes changeColor{
-    0%{
-        color: $nav-number;
-    }
-    100%{
-        color: $header-web;
-    }
-}
+
 
 .header__contactc-item{
     font-weight: 500;
@@ -91,26 +93,28 @@
     color: $nav;
     transition-property: color;
     transition-duration: 250ms;
+
+    &:hover{
+        animation-name: change;
+        animation-timing-function: $time;
+        animation-duration: 250ms;
+        animation-fill-mode: forwards;
+    }
+    @keyframes change{
+            0%{
+                color: $nav-number;
+            }
+            100%{
+                color: $header-web;
+            }
+    }
 }
 
 .header__contactc-link:hover.header__contact-icon{
     fill: $header-web;
 }
 
-.header__contactc-link:hover{
-    animation-name: change;
-    animation-timing-function: $time;
-    animation-duration: 250ms;
-    animation-fill-mode: forwards;
-}
-@keyframes change{
-        0%{
-            color: $nav-number;
-        }
-        100%{
-            color: $header-web;
-        }
-}
+
 
 .header__contactc.header__contactc-link:hover{
     animation-name: changefill;

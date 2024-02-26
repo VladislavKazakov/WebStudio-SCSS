@@ -35,10 +35,12 @@
     color: rgba(255, 255, 255, 0.60);
     transition-property: color;
     transition-duration: 250ms;
+
+    &:hover{
+        color: $header-web;
+    }
 }
-.footer__tel:hover{
-    color: $header-web;
-}
+
 
 .footer__social{
     margin-top: 72px;
@@ -72,12 +74,12 @@
     margin-right: 10px;
     transition-property: background-color;
     transition-duration: 250ms;
-}
 
-.footer__link:hover,
-.footer__link:focus{
-    fill: $main-title;
-    background-color: $header-web;
+    &:hover,
+    :focus{
+        fill: $main-title;
+        background-color: $header-web;
+    }
 }
 
 .footer__sub{

@@ -69,6 +69,20 @@ a {
   transition-property: color;
   transition-duration: 250ms;
 }
+.header__site-nav-link:hover {
+  animation-name: changeColor;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-duration: 250ms;
+  animation-fill-mode: forwards;
+}
+@keyframes changeColor {
+  0% {
+    color: #757575;
+  }
+  100% {
+    color: #2196f3;
+  }
+}
 
 .header__site-nav-link.current::after {
   content: "";
@@ -82,21 +96,6 @@ a {
   bottom: -32px;
 }
 
-.header__site-nav-link:hover {
-  animation-name: changeColor;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-duration: 250ms;
-  animation-fill-mode: forwards;
-}
-
-@keyframes changeColor {
-  0% {
-    color: #757575;
-  }
-  100% {
-    color: #2196f3;
-  }
-}
 .header__contactc-item {
   font-weight: 500;
   font-size: 14px;
@@ -117,18 +116,12 @@ a {
   transition-property: color;
   transition-duration: 250ms;
 }
-
-.header__contactc-link:hover.header__contact-icon {
-  fill: #2196f3;
-}
-
 .header__contactc-link:hover {
   animation-name: change;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   animation-duration: 250ms;
   animation-fill-mode: forwards;
 }
-
 @keyframes change {
   0% {
     color: #757575;
@@ -137,6 +130,11 @@ a {
     color: #2196f3;
   }
 }
+
+.header__contactc-link:hover.header__contact-icon {
+  fill: #2196f3;
+}
+
 .header__contactc.header__contactc-link:hover {
   animation-name: changefill;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -380,7 +378,6 @@ a {
   transition-property: fill, border;
   transition-duration: 250ms;
 }
-
 .customers__icon:hover {
   fill: #2196f3;
   border: 1px solid #2196f3;
@@ -440,9 +437,8 @@ a {
 .modal__icon {
   fill: #000000;
 }
-
 .modal__icon:hover,
-.modal__icon:focus {
+.modal__icon :focus {
   fill: #2196f3;
 }
 
@@ -474,6 +470,17 @@ a {
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 42px;
 }
+.modal__form-input:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+.modal__form-input:hover {
+  fill: #2196f3;
+}
+.modal__form-input:hover {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+}
 
 .modal__form-icon {
   position: relative;
@@ -483,19 +490,9 @@ a {
   height: 18px;
 }
 
-.modal__form-input:focus {
-  outline: none;
-  border-color: #2196f3;
-}
-
 .modal__form-input:hover,
 .modal__form-icon {
   fill: #2196f3;
-}
-
-.modal__form-input:hover {
-  fill: #2196f3;
-  border: 1px solid #2196f3;
 }
 
 .modal__form-field {
@@ -585,7 +582,6 @@ a {
   transition-property: color;
   transition-duration: 250ms;
 }
-
 .footer__tel:hover {
   color: #2196f3;
 }
@@ -622,9 +618,8 @@ a {
   transition-property: background-color;
   transition-duration: 250ms;
 }
-
 .footer__link:hover,
-.footer__link:focus {
+.footer__link :focus {
   fill: #ffffff;
   background-color: #2196f3;
 }
@@ -672,11 +667,6 @@ a {
   gap: 8px;
 }
 
-.work__filt:hover {
-  background-color: #2196f3;
-  color: #ffffff;
-}
-
 .work__filt {
   background: #f5f4fa;
   font-weight: 500;
@@ -691,10 +681,13 @@ a {
   transition-property: background-color;
   transition-duration: 250ms;
 }
-
 .work__filt:hover,
-.work__filt:focus {
+.work__filt :focus {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.work__filt:hover {
+  background-color: #2196f3;
+  color: #ffffff;
 }
 
 .work__portpfilio-item {
@@ -703,9 +696,8 @@ a {
   margin-bottom: 30px;
   width: 370px;
 }
-
 .work__portpfilio-item:hover,
-.work__portpfilio-item:focus {
+.work__portpfilio-item :focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 

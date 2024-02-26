@@ -21,9 +21,9 @@
     padding: 16px 32px;
     transition-property: fill, border;
     transition-duration: 250ms;
-}
 
-.customers__icon:hover{
-    fill: $header-web;
-    border: 1px solid $header-web;
+    &:hover{
+        fill: $header-web;
+        border: 1px solid $header-web;
+    }
 }

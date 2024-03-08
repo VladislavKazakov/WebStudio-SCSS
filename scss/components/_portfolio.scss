@@ -67,7 +67,7 @@
     top: 0;
     left: 0;
     font-size: 18px;
-    @mixin background ($rgba)
+    background-color: $rgba;
     opacity: 0;
     letter-spacing: 0.03em;
     line-height: 1.6;

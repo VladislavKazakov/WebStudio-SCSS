@@ -1,16 +1,31 @@
 .main__section-post{
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-color: $main;
-    padding-top: 200px;
-    padding-bottom: 200px;
     background: url(../img/lydi.webp), lightgray 0px -147.517px / 100% 170.667% no-repeat;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
+@media screen and (min-width: 1200px) {
+    .main__section-post{
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    .main__post-taitel{
+    font-size: 40px;
+    }
+
+    .main__post-button{
+        padding: 10px 32px;
+    }
+}
+
 .main__post-taitel{
     text-align: center;
-    font-size: 40px;
+    font-size: 26px;
     font-weight: 900px;
     line-height: 136%;
     text-transform: uppercase;
@@ -18,19 +33,54 @@
     margin-bottom: 30px;
 }
 
-.main__post-wrap{
-    display: flex;
-    justify-content: center;
-}
-
 .main__post-button{
+    display: block;
+    margin: 0 auto;
     color: $main-title;
     background: $header-web;
     font-size: 16px;
     font-weight: 700;
-    padding: 10px 32px;
+    padding: 10px 24px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+
+
+// .main__section-post{
+//     background-color: $main;
+//     padding-top: 200px;
+//     padding-bottom: 200px;
+//     background: url(../img/lydi.webp), lightgray 0px -147.517px / 100% 170.667% no-repeat;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+// }
+
+// .main__post-taitel{
+//     text-align: center;
+//     font-size: 40px;
+//     font-weight: 900px;
+//     line-height: 136%;
+//     text-transform: uppercase;
+//     color: $main-title;
+//     margin-bottom: 30px;
+// }
+
+// .main__post-wrap{
+//     display: flex;
+//     justify-content: center;
+// }
+
+// .main__post-button{
+//     color: $main-title;
+//     background: $header-web;
+//     font-size: 16px;
+//     font-weight: 700;
+//     padding: 10px 32px;
+//     border: none;
+//     border-radius: 4px;
+//     cursor: pointer;
+//     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+// }

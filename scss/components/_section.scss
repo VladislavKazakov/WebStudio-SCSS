@@ -21,7 +21,7 @@
     .section__site-details{
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
+        flex-wrap: wrap; 
     }
 }
 
@@ -29,6 +29,7 @@
     .section__site-details-item::before{
         width: 270px
     }
+    
 }
 
 

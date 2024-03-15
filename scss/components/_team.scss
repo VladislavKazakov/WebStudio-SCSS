@@ -28,9 +28,41 @@
 }
 
 .team__img{
-    width: 467px;
-    height: 460px;
+    width: 450px;
+    height: 445px;
     margin-bottom: 30px;
+}
+
+.team__social-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.team__social-link{
+    fill: $icon-color;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+
+    &:hover,
+    :focus{
+        fill: $main-title;
+        background-color: $header-web;
+    }
+}
+
+.team__item{
+    background-color: $main-title;
+    width: 270px;
+    padding-bottom: 30px;
+    border-radius: 0px 0px 4px 4px;
+    background: $main-title;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 @media screen and (min-width: 480px) {
@@ -43,7 +75,7 @@
     .team__sectio-title{
         font-size: 28px;
     }
-        .team__img{
+    .team__img{
         width: 345px;
         height: 374px;
     }
@@ -52,6 +84,10 @@
 @media screen and (min-width: 1200px) {
     .team__sectio-title{
         font-size: 36px;
+    }
+    .team__img{
+        width: 270px;
+        height: 260px;
     }
 }
 
@@ -107,23 +143,23 @@
 //     font-size: 16px;
 // }
 
-.team__social-link{
-    fill: $icon-color;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-property: background-color;
-    transition-duration: 250ms;
+// .team__social-link{
+//     fill: $icon-color;
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     transition-property: background-color;
+//     transition-duration: 250ms;
 
-    &:hover,
-    :focus{
-        fill: $main-title;
-        background-color: $header-web;
-    }
-}
+//     &:hover,
+//     :focus{
+//         fill: $main-title;
+//         background-color: $header-web;
+//     }
+// }
 
 // .team__social-list{
 //     display: flex;
@@ -132,8 +168,3 @@
 //     margin-left: 32px;
 //     margin-top: 16px;
 // }
-
-.team__social-icon{
-    width: 20px;
-    height: 20px;
-}

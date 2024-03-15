@@ -2,14 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 94px;
+    margin-top: 60px;
 }
 
 .customers__list{
     display: flex;
-    justify-content: space-between;  
-    margin-bottom: 94px;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    margin-top: 60px;
 }
 
 .customers__icon{
@@ -22,8 +22,65 @@
     transition-property: fill, border;
     transition-duration: 250ms;
 
+
     &:hover{
         fill: $header-web;
         border: 1px solid $header-web;
     }
 }
+
+@media screen and (min-width: 480px) and ( max-width: 767px ) {
+    .customers__icon{
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .customers__list{
+        
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .customers__wrap{
+        align-items: center;
+        justify-content: center;
+        margin-top: 94px;
+    }
+    .customers__list{
+        justify-content: space-evenly;  
+        margin-bottom: 94px;
+        margin-top: 50px;
+    }
+}
+
+// .customers__wrap{
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin-top: 94px;
+// }
+
+// .customers__list{
+//     display: flex;
+//     justify-content: space-evenly;  
+//     margin-bottom: 94px;
+//     margin-top: 50px;
+// }
+
+// .customers__icon{
+//     width: 106px;
+//     height: 60px;
+//     fill: $icon-color;
+//     border-radius: 4px;
+//     border: 1px solid #AFB1B8;
+//     padding: 16px 32px;
+//     transition-property: fill, border;
+//     transition-duration: 250ms;
+
+//     &:hover{
+//         fill: $header-web;
+//         border: 1px solid $header-web;
+//     }
+// }

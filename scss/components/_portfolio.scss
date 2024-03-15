@@ -1,16 +1,16 @@
 .work__blok{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .work__filt-button{
     color: $nav-studio;
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    justify-content: left;
+    margin-bottom: 40px;
     gap: 8px;
+    flex-wrap: wrap;
 }
-
 
 .work__filt{
     background: $button;
@@ -35,7 +35,16 @@
         background-color: $header-web;
         color: $main-title;
     }
+}
 
+
+.work__portpfilio{
+    margin: 0 auto;
+}
+
+.work__portpfilio-img{
+    min-width: 290px;
+    max-width: 450px;
 }
 
 .work__portpfilio-item{
@@ -43,23 +52,10 @@
     background: $main-title;
     margin-bottom: 30px;
     width: 370px;
-
     &:hover,
     :focus{
-        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     }
-}
-
-
-.work__portpfilio-img{
-    width: 370px;
-    height: 294px;
-}
-
-.work__portpfilio{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .work__product-action{
@@ -84,6 +80,10 @@
     transform: translate(0);
 }
 
+.work__product-trumb{
+    position: relative;
+    overflow: hidden;
+}
 
 .work__portpfilio-title{
     color: $nav-studio;
@@ -99,12 +99,118 @@
     margin: 4px 24px 20px 24px; 
 }
 
-.work__product-trumb{
-    position: relative;
-    overflow: hidden;
+@media screen and (min-width: 768px) {
+    
 }
 
-.work__portpfilio-card{
-    width: 370px;
-    height: 404px; 
-}
+
+// .work__blok{
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+// }
+
+// .work__filt-button{
+//     color: $nav-studio;
+//     display: flex;
+//     justify-content: center;
+//     margin-bottom: 50px;
+//     gap: 8px;
+// }
+
+
+// .work__filt{
+//     background: $button;
+//     font-weight: 500;
+//     border-radius: 4px;
+//     font-size: 16px;
+//     font-weight: 500;
+//     border: none;
+//     padding: 6px 22px;
+//     line-height: 162%;
+//     cursor: pointer;
+//     font-family: 'Roboto', sans-serif;
+//     transition-property: background-color;
+//     transition-duration: 250ms;
+
+//     &:hover,
+//     :focus{
+//         box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+//     }
+
+//     &:hover{
+//         background-color: $header-web;
+//         color: $main-title;
+//     }
+
+// }
+
+// .work__portpfilio-item{
+//     border: 1px solid $button;
+//     background: $main-title;
+//     margin-bottom: 30px;
+//     width: 370px;
+
+//     &:hover,
+//     :focus{
+//         box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+//     }
+// }
+
+
+// .work__portpfilio-img{
+//     width: 370px;
+//     height: 294px;
+// }
+
+// .work__portpfilio{
+//     display: flex;
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+// }
+
+// .work__product-action{
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     font-size: 18px;
+//     background-color: $rgba;
+//     opacity: 0;
+//     letter-spacing: 0.03em;
+//     line-height: 1.6;
+//     color: $main-title;
+//     width: 100%;
+//     height: 100%;
+//     padding: 63px 24px;
+//     transform: translateY(100%);
+//     transition: transform 250ms ease;
+// }
+
+// .work__portpfilio-item:hover .work__product-action{
+//     opacity: 1;
+//     transform: translate(0);
+// }
+
+
+// .work__portpfilio-title{
+//     color: $nav-studio;
+//     font-size: 18px;
+//     font-weight: 700;
+//     margin: 20px 24px 4px 24px;
+// }
+
+// .work__portpfilio-text{
+//     color: $nav-number;
+//     font-size: 16px;
+//     font-weight: 400;
+//     margin: 4px 24px 20px 24px; 
+// }
+
+// .work__product-trumb{
+//     position: relative;
+//     overflow: hidden;
+// }
+
+// .work__portpfilio-card{
+//     width: 370px;
+//     height: 404px; 
+// }

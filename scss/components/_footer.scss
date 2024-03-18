@@ -4,22 +4,18 @@
     background-color: $footer-background;
 }
 
-.footer__wrapper{
-    display: flex;
-    margin: 0 auto;
-    align-items: baseline;
-}
-
 .footer__item{
     margin: 9px;
 }
 
 .fuoter__logo{
     font-family: 'Raleway', sans-serif;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     color: $header-web;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .footer__white{
@@ -29,23 +25,26 @@
 .footer__city{
     color: $main-title;
     font-size: 14px;
+    display: flex;
+    justify-content: center;
 }
 
 .footer__tel{
     color: rgba(255, 255, 255, 0.60);
     transition-property: color;
     transition-duration: 250ms;
+    display: flex;
+    justify-content: center;
+
 
     &:hover{
         color: $header-web;
     }
 }
 
-
 .footer__social{
-    margin-top: 72px;
-    margin-left: 70px;
-    
+    margin-top: 60px;
+    margin-left: 137px;
 }
 
 .footer__join{
@@ -53,6 +52,7 @@
     justify-content: left;
     color: $button;
     margin-bottom: 20px;
+
 }
 
 .footer__icon{
@@ -83,14 +83,16 @@
 }
 
 .footer__sub{
-    margin-left: 93px;
-
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
 }
 
 .footer__subscribe{
     width: 200px;
     height: 50px;
     border-radius: 4px;
+    border: none;
     background: $header-web;
     color: $main-title;
     font-family: 'Roboto', sans-serif;
@@ -98,18 +100,179 @@
     cursor: pointer;
 }
 
-
 .footer__newsletter{
     color: $main-title;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .footer__form-input-subscribe{
-    width: 358px;
+    width: 450px;
     height: 50px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.30);
     background: rgba(33, 150, 243, 0.00);
     padding-left: 16px;
 }
+
+.footer__form-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (min-width:1200px) {
+    
+    .footer__wrapper{
+       display: flex;
+      margin: 0 auto;
+      align-items: baseline;
+    }
+
+    .fuoter__logo{
+        font-size: 26px;
+
+    }
+
+    .footer__social{
+        margin-top: 72px;
+        margin-left: 70px;
+    }
+    .footer__sub{
+        margin-left: 93px;
+    
+    }
+    .footer__subscribe{
+        background: $header-web;
+        color: $main-title;
+        line-height: 30px;
+    }
+    .footer__form-input-subscribe{
+        width: 358px;
+    }
+}
+
+
+
+
+
+
+
+// .footer{
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//     background-color: $footer-background;
+// }
+
+// .footer__wrapper{
+//     display: flex;
+//     margin: 0 auto;
+//     align-items: baseline;
+// }
+
+// .footer__item{
+//     margin: 9px;
+// }
+
+// .fuoter__logo{
+//     font-family: 'Raleway', sans-serif;
+//     font-size: 26px;
+//     font-weight: 700;
+//     color: $header-web;
+//     margin-bottom: 20px;
+// }
+
+// .footer__white{
+//     color: $main-title;
+// }
+
+// .footer__city{
+//     color: $main-title;
+//     font-size: 14px;
+// }
+
+// .footer__tel{
+//     color: rgba(255, 255, 255, 0.60);
+//     transition-property: color;
+//     transition-duration: 250ms;
+
+//     &:hover{
+//         color: $header-web;
+//     }
+// }
+
+
+// .footer__social{
+//     margin-top: 72px;
+//     margin-left: 70px;
+// }
+
+// .footer__join{
+//     display: flex;
+//     justify-content: left;
+//     color: $button;
+//     margin-bottom: 20px;
+// }
+
+// .footer__icon{
+//     display: flex;
+//     width: 20px;
+//     height: 20px;
+//     fill: $main-title;
+// }
+
+// .footer__link{
+//     fill: $icon-color;
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: rgba(255, 255, 255, 0.10);
+//     margin-right: 10px;
+//     transition-property: background-color;
+//     transition-duration: 250ms;
+
+//     &:hover,
+//     :focus{
+//         fill: $main-title;
+//         background-color: $header-web;
+//     }
+// }
+
+// .footer__sub{
+//     margin-left: 93px;
+
+// }
+
+// .footer__subscribe{
+//     width: 200px;
+//     height: 50px;
+//     border-radius: 4px;
+//     background: $header-web;
+//     color: $main-title;
+//     font-family: 'Roboto', sans-serif;
+//     line-height: 30px;
+//     cursor: pointer;
+// }
+
+
+// .footer__newsletter{
+//     color: $main-title;
+//     font-family: 'Roboto', sans-serif;
+//     margin-bottom: 20px;
+// }
+
+// .footer__form-input-subscribe{
+//     width: 358px;
+//     height: 50px;
+//     border-radius: 4px;
+//     border: 1px solid rgba(255, 255, 255, 0.30);
+//     background: rgba(33, 150, 243, 0.00);
+//     padding-left: 16px;
+// }

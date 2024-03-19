@@ -12,7 +12,7 @@
 </head>
 <body>
     
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__wrap">
             <div class="header__nav-wrap">
         <a class="header__logo" href="index.html">Web<span class="header__black">Studio</span></a>
@@ -39,7 +39,68 @@
                 +380 096 111 11 11</a></li>            
         </ul>
     </div>
-    </header> -->
+
+    <!-- mobile-menu -->
+    <button class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-button__open" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z" fill="black"/>
+            </svg>
+    </button>
+    <div class="memu-container js-menu-container" id="mobile-menu">
+        <button type="button" class="menu-button js-close-menu">
+            <svg class="menu-button__close">
+                <use>
+
+                </use>
+            </svg>
+
+        </button>
+
+        <div class="menu-box">
+            <div class="mobile-menu">
+                <nav class="mobile-nav">
+                    <ul class="mobile-nav__list">
+                        <li class="mobile-nav__item">
+                            <a href="" class="mobile-nav__link">Студія</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="" class="mobile-nav__link">Партфоліо</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="" class="mobile-nav__link">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="mobile-socials">
+                <ul class="mobile-contacts">
+                    <li class="mobile-contacts">
+                        <a href="tel:+3800961111111" class="mobile-contacts-tel"></a>
+                    </li>
+                    <li class="mobile-contacts">
+                        <a href="mailto:info@devstudio" class="mobile-contacts-meil"></a>
+                    </li>
+                </ul>
+                <ul class="mobile-socials__list">
+                    <li class="mobile-socials__item">
+                        <a href="#" class="mobile-socials__link">Instagram</a>
+                    </li>
+                    <li class="mobile-socials__item">
+                        <a href="#" class="mobile-socials__link">Twitter</a>
+                    </li>
+                    <li class="mobile-socials__item">
+                        <a href="#" class="mobile-socials__link">Facebook</a>
+                    </li>
+                    <li class="mobile-socials__item">
+                        <a href="#" class="mobile-socials__link">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </header>
     
 
     <main class="main">
@@ -358,6 +419,8 @@
             </div>
         </div>
 
+
+        <script src="./mobile-menu.js"></script>
         <script src="./script.js"></script>
 </body>
 </html>

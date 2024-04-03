@@ -24,8 +24,7 @@
 }
 
 .header__navigation{
-        font-size: 14px;
-        font-weight: 500;
+    display: none;
 }
 
 .header__black{
@@ -85,8 +84,7 @@
 }
 
 .header__contactc{
-    display: flex; 
-    align-items: center;
+    display: none;
 }
 
 .header__contactc-link{
@@ -139,3 +137,16 @@
         display: none;
     }
 }
+
+@media screen and (min-width:768px) {
+    .header__navigation{
+        font-size: 14px;
+        font-weight: 500;
+        display: block;
+    }
+    .header__contactc{
+        display: flex; 
+        align-items: center;
+    }
+}
+

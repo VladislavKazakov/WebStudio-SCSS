@@ -64,8 +64,7 @@ a {
 }
 
 .header__navigation {
-  font-size: 14px;
-  font-weight: 500;
+  display: none;
 }
 
 .header__black {
@@ -122,8 +121,7 @@ a {
 }
 
 .header__contactc {
-  display: flex;
-  align-items: center;
+  display: none;
 }
 
 .header__contactc-link {
@@ -173,16 +171,42 @@ a {
     display: none;
   }
 }
+@media screen and (min-width: 768px) {
+  .header__navigation {
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+  }
+  .header__contactc {
+    display: flex;
+    align-items: center;
+  }
+}
 .main__section-post {
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: #2f303a;
-  background: url(../img/lydi.webp), lightgray 0px -147.517px/100% 170.667% no-repeat;
+  background: url(../../img/mobile2x.png), lightgray 0px -147.517px/100% 170.667% no-repeat;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+@media screen and (min-width: 768px) {
+  .main__section-post {
+    background-image: url(./../../img/tablet2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .main__section-post {
+    background-image: url(./../../img/lydi.webp);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .main__section-post {
+    background-image: url(./../../img/pk2x.png);
+  }
+}
 @media screen and (min-width: 1200px) {
   .main__section-post {
     padding-top: 200px;
@@ -929,5 +953,155 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+}
+.menu-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 48px 40px;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  z-index: 999;
+  transform: translateX(100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container.is-open {
+  transform: translateX(0%);
+}
+
+.menu-button {
+  position: absolute;
+  top: 10px;
+  right: 2px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.menu-button__open {
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  margin-left: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.menu-button__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  border: none;
+  margin-left: auto;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.menu-button__open,
+.menu-button__close {
+  fill: #212121;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-button__open:active,
+.menu-button__close:active {
+  fill: #2196f3;
+  color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mobile-nav__item {
+  margin-bottom: 35px;
+  margin-left: 70px;
+}
+
+.mobile-socials__link {
+  font-weight: 500;
+  font-size: 18px;
+  color: #2196f3;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
+.mobile-socials__item {
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-contacts-tel {
+  display: flex;
+  font-weight: 500;
+  font-size: 34px;
+  margin-top: 200px;
+  justify-content: center;
+  margin-bottom: 12px;
+  right: 30px;
+}
+
+.mobile-contacts-meil {
+  display: flex;
+  font-weight: 500;
+  font-size: 34px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.mobile-contacts-tel {
+  color: #2196f3;
+}
+
+.mobile-contacts-meil {
+  text-decoration: none;
+  color: #757575;
+}
+
+.mobile-contacts:hover:focus {
+  color: #2196f3;
+}
+
+.mobile-nav__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: #212121;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-nav__link:hover:focus {
+  color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+  .menu-button {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */

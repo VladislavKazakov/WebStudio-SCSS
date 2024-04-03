@@ -2,10 +2,30 @@
     padding-top: 118px;
     padding-bottom: 118px;
     background-color: $main;
-    background: url(../img/lydi.webp), lightgray 0px -147.517px / 100% 170.667% no-repeat;
+    background: url(../../img/mobile2x.png), lightgray 0px -147.517px / 100% 170.667% no-repeat;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+    .main__section-post{
+        background-image: url(./../../img/tablet2x.png);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main__section-post{
+        background-image: url(./../../img/lydi.webp);
+    }
+
+    @media (min-device-pixel-ratio:2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+        .main__section-post{
+            background-image: url(./../../img/pk2x.png);
+        }
+    }
 }
 
 @media screen and (min-width: 1200px) {
